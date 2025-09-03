@@ -1,0 +1,86 @@
+@media only screen and (min-width: 768px) {
+
+    .header__divider--first {
+    display: flex;
+}
+/* не получается кнопки передвинуть к правому боку*/
+    .header__button--additional {
+    display: flex;
+}
+    .info__container{
+        gap: 30px;
+    }
+    .text__medium {
+        display: flex;
+}
+    .info__img {
+        border-radius: 7px;
+        min-width: 360px;
+        min-height: 208px;
+        padding-right: 20px;
+    }
+    
+    .info__container{
+        display: flex;
+  }  
+}
+
+@media only screen and (min-width: 1120px) {
+
+    .header {
+        display: none;
+    }
+    
+    .info__top {
+        display: flex;
+        position: relative;
+    }
+
+    .button__main {
+        display: flex;
+        position: absolute;
+        padding-left: 80%;
+        gap: 20px;
+    }
+/* не получается лабель сделать слева посередине */
+/*при уменьшении экрана - лабели и кнопки ломаются*/
+
+    .header__button--text {
+        font-family:'TT Lakes Medium';
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21; 
+    }
+/*не растягивается на всю строку*/
+    .menu__list {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        
+    }
+
+    .menu__item {
+        flex: 1;
+        white-space: nowrap;
+    }
+/*когда строка "специальные цены" переносится - она вместе с "отзывы" встает по середине*/
+    .menu__link--reviews {
+        flex: 0 0 100%;
+        padding-left: 6%;
+    }
+
+    .text__full {
+        display: flex;
+    }
+    .text__medium {
+        display: none;
+    }
+
+    .info__img {
+        border-radius: 7px;
+        min-width: 531px;
+        min-height: 307px;
+        padding-right: 20px;
+    }
+}

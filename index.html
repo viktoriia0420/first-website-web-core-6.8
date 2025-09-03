@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adaptive website">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="adaptive.css">
+    <title>Adaptive website</title>
+</head>    
+
+<body>
+    <header class="header">
+        <button class="header__button header__button--burger" type="button">
+            <img src="menu/burger.svg" alt="burger">
+        </button>
+        
+        <!-- для min-width: 596px-->
+        <div class="header__divider header__divider--first"></div>
+
+        <a class="header__logo" href="/">
+            <img src="menu/logo_cps.svg" alt="logo">
+        </a>
+               
+        <!-- для min-width: 596px-->
+        <div class="header__button header__button--additional">
+            <button class="header__button header__button--call" type="button">
+                <img src="menu/call.svg" alt="call">
+            </button>
+            <button class="header__button header__button--chat" type="button">
+                <img src="menu/chat.svg" alt="chat">
+            </button>
+            <button class="header__button header__button--profile" type="button">
+                <img src="menu/profile.svg" alt="profile">
+            </button>
+        </div>
+        
+        <div class="header__divider header__divider--second"></div>
+       
+        
+        <button class="header__button header__button--repair" type="button">
+            <img src="menu/repair.svg" alt="repair">
+        </button>
+        <button class="header__button header__button--checkstatus" type="button">
+            <img src="menu/checkstatus.svg" alt="checkstatus">
+        </button>
+    </header>
+     
+
+    <main class="info">
+        <div class="info__top">
+            <h1>Услуги и сервисы</h1>
+        
+            <!-- для min-width:1120px-->
+            <div class="button button__main">
+                <button class="header__button header__button--repair--main" type="button">
+                    <span class="header__button--text">Оставить заявку</span>
+                    <img src="menu/repair.svg" alt="repair">
+                </button>
+                <button class="header__button header__button--checkstatus--main" type="button">
+                    <span class="header__button--text">Статус ремонта</span>
+                    <img src="menu/checkstatus.svg" alt="checkstatus">
+                </button>
+            </div>
+        </div>
+       
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item menu__item--current">
+                    <a class="menu__link" href="/">Ремонтируемые устройства</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/">Дополнительные услуги</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/">Цены на услуги </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/">Адреса сервисных центров</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/">Специальные цены</a>
+                </li>
+                 <li class="menu__item menu__item">
+                    <a class="menu__link menu__link--reviews" href="/">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="info__container">
+            <div class="info__description">
+                <p class="text text__short">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                        
+                <!-- для min-width: 596px-->
+                <p class="text text__medium">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+                
+                <!-- для min-width: px-->
+                <p class="text text__full">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                
+                <button class="button button__read-more">
+                    <span class="button__icon">
+                        <img src="main/read_more_icon.svg" alt="icon">
+                    </span>
+                    <span class="button__text">Читать далее</span>
+                </button>
+            </div>    
+        
+            <img class="info__img" src="main/main_img.png" alt="CPS">
+        </div>
+    
+
+
+    </main>
+</body>
+
