@@ -12,39 +12,44 @@
 
 <body>
     <header class="header">
-        <button class="header__button header__button--burger" type="button">
-            <img class="icon" src="menu/burger.svg" alt="burger">
-        </button>
+        <div class="header__right">
+            <button class="header__button header__button--burger" type="button">
+                <img class="icon" src="menu/burger.svg" alt="burger">
+            </button>
         
         <!-- для min-width: 596px-->
-        <div class="header__divider header__divider--first"></div>
+            <div class="header__divider header__divider--first"></div>
 
-        <a class="header__logo" href="/">
-            <img src="menu/logo_cps.svg" alt="logo">
-        </a>
-               
-        <!-- для min-width: 596px-->
-        <div class="header__button header__button--additional">
-            <button class="header__button header__button--call" type="button">
-                <img class="icon" src="menu/call.svg" alt="call">
-            </button>
-            <button class="header__button header__button--chat" type="button">
-                <img class="icon" src="menu/chat.svg" alt="chat">
-            </button>
-            <button class="header__button header__button--profile" type="button">
-                <img class="icon" src="menu/profile.svg" alt="profile">
-            </button>
+            <a class="header__logo" href="/">
+                <img src="menu/logo_cps.svg" alt="logo">
+            </a>
         </div>
         
-        <div class="header__divider header__divider--second"></div>
-       
+        <!-- для min-width: 596px-->
+        <div class="header__left">
+            <div class="header__button header__button--additional">
+                <button class="header__button header__button--call" type="button">
+                    <img class="icon" src="menu/call.svg" alt="call">
+                </button>
+                <button class="header__button header__button--chat" type="button">
+                    <img class="icon" src="menu/chat.svg" alt="chat">
+                </button>
+                <button class="header__button header__button--profile" type="button">
+                    <img class="icon" src="menu/profile.svg" alt="profile">
+                </button>
+            </div>
         
-        <button class="header__button header__button--repair" type="button">
-            <img class="icon" src="menu/repair.svg" alt="repair">
-        </button>
-        <button class="header__button header__button--checkstatus" type="button">
-            <img class="icon" src="menu/checkstatus.svg" alt="checkstatus">
-        </button>
+            <div class="header__divider header__divider--second"></div>
+
+            <div class="header__button header__button--last">
+                <button class="header__button header__button--repair" type="button">
+                    <img class="icon" src="menu/repair.svg" alt="repair">
+                </button>
+                <button class="header__button header__button--checkstatus" type="button">
+                    <img class="icon" src="menu/checkstatus.svg" alt="checkstatus">
+                </button>
+            </div>
+        </div>
     </header>
      
 

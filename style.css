@@ -33,6 +33,7 @@
 body {
     background-color: #F8F8F8;
     margin: 0;
+    font-family: 'TT Lakes';
 }
 
 .header {
@@ -42,20 +43,36 @@ body {
     background-color: #FFFFFF;
     box-shadow: 0 1px 1px #D9FFF5;
     width: 100%;
-    margin-left: 10px;
 }
+
+.header__right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.header__left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 
 .header__button {
     border: none;
     outline: none;
-    background-color: #FFFFFF;
+    background: transparent;
+    display: flex;
+    align-items: center;
 }
 
 .header__button--additional {
     display: none;
+    gap: 10px;
 }
 
-
+.header__button--last {
+    gap: 10px;
+}
 
 .header__divider {
     width: 2px;
@@ -80,14 +97,24 @@ body {
 
 
 h1 {
-    font-family:'TT Lakes';
     font-weight: 700;
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
     color: #1B1C21;
-    border-left: 4px solid #41F6D7;
-    padding-left: 12px;
+    padding-left: 20px;
+    position:relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #41F6D7;
+    left: 0;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
 
@@ -95,29 +122,28 @@ h1 {
 .menu__list {
     display: flex;
     list-style: none;
-    overflow: scroll;
+    overflow-x: scroll;
+    gap: 40px;
+    row-gap: 5px;
     margin-top: 30px;
-    padding-inline-start: 0px;
-    /* padding-left: 0px; */
+    margin-left: 20px;
+    padding-inline-start: 0;
 }
 
 .menu__item {
     display: flex;
-    width: 246px;
     height: 40px;
     justify-content: center;
     align-items: center;
 }
 
 .menu__link {
-    font-family:'TT Lakes';
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #7E7E82;
     text-decoration: none;
     white-space: nowrap;
-    margin: 0 32px;
 }
 
 .menu__item--current {
@@ -127,11 +153,16 @@ h1 {
     border-radius: 6px;
     background-color: #fff;
     box-sizing: border-box;
-    margin-left: 20px;
+    padding: 0 10px;
+}
+
+.info__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .text {
-    font-family:'TT Lakes';
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
@@ -153,7 +184,6 @@ h1 {
 }
 
 .button__text {
-    font-family: 'TT Lakes';
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -163,8 +193,7 @@ h1 {
 
 .info__img {
     margin-top: 20px;
-    max-width: 430px;
-    max-height: 176px;
+    max-width: 100%;
 }
 
 
